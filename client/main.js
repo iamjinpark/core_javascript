@@ -1,5 +1,1 @@
-// eslint no-undef: 'off'
-
-const a = '10';
-
-console.log(navigator.language);
+window.alert('안녕 자바스크립트!');

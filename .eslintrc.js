@@ -5,6 +5,9 @@ module.exports = {
     node: true,
   },
   extends: 'eslint:recommended',
+  golbals: {
+    getNode: true,
+  },
   overrides: [
     {
       env: {

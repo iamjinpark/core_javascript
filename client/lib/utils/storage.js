@@ -1,7 +1,7 @@
-const { localStorage: storage } = window;
+import { isString } from './typeOf.js';
+import { typeError } from '../error/typeError.js';
 
-// storage.setItem('obj', JSON.stringify({ name: 'tiger', age: 15 }));
-// console.log(JSON.parse(storage.getItem('obj')));
+const { localStorage: storage } = window;
 
 export function setStorage(key, value) {
   return new Promise((resolve, reject) => {
@@ -23,11 +23,6 @@ export function getStorage(key) {
     }
   });
 }
-
-// storage.clear()
-// storage.removeItem(key)
-
-// deleteStorage()
 
 export function deleteStorage(key) {
   return new Promise((resolve, reject) => {
